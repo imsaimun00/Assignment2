@@ -5,21 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment2</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  
+  <!-- font: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- font: Noto serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <style>
     .font-inter {
       font-family: 'Inter', sans-serif;
     }
+    .font-noto-serif {
+      font-family: 'Noto Serif', sans-serif;
+    }
   </style>
 
 </head>
-<body>
-   <header>
-      <div class="flex justify-between items-center sm:mx-[150px] sm:mt-[30px] sm:mb-[109px] mx-[16px] mt-[13px] mb-[28px]">
+<body class="flex justify-center">
+   <div class="max-w-[1440px]">
+    <header>
+      <section class="flex justify-between items-center  sm:mt-[30px] sm:mb-[109px]  mt-[13px] mb-[28px]">
         <img class="w-[63px] sm:w-[135px]" src="assets/logo.png" alt="">
         <div>
           <nav class="flex justify-between items-center font-inter">
@@ -29,16 +37,34 @@
                 <li class="text-[color:#8987A1]"><a href="#section2">Shop</a></li>
                 <li class="text-[color:#8987A1]"><a href="#section3">About us</a></li>
               </div>
-              <div class="flex space-x-2">
-               <li><img class="w-[22px]" src="assets/Shopping-Cart.svg" alt=""></li>
-               <li><a href="#section3">Cart($56)</a></li>
-              </div>
+               <li class="flex space-x-2">
+                <img class="w-[22px]" src="assets/Shopping-Cart.svg" alt="">
+                <a href="#section3">Cart($56)</a>
+               </li>
             </ul>
           </nav>
         </div>
-      </div>
+      </section>
+      <section class="flex justify-between items-end">
+        <div class="mt-[162px]">
+          <div class="w-[517px]">
+            <h1 class="font-noto-serif text-[32px] sm:text-[65px] leading-[90px] mb-[13px] font-bold">
+            ALWAYS <span class="text-[color:#E95A08]">FRESH FLOWERS</span>
+          </h1>
+          </div>
+          <div class="w-[570px]">
+            <p class="font-inter text-[16px] sm:text-[22px] text-[color:#8987A1] leading-[25px] font-normal">
+            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+          </p>
+          </div>
+        </div>
+        <div class="block">
+          <img src="assets/hero-flower.png" alt="">
+        </div>
+      </section>
    </header>
    <main></main>
    <footer></footer>
+   </div>
 </body>
 </html>
